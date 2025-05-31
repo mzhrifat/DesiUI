@@ -1,106 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daisy khala</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daisy Khala</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-900 text-white px-4 py-8 space-y-10 font-sans">
 
-<body class="bg-gray-900 text-white p-6 space-y-6">
+  <!-- Header -->
+  <header class="text-center space-y-2">
+    <h1 class="text-3xl font-bold">I explored Tailwind</h1>
+    <p class="text-lg text-gray-300">Now I want to see my khala, none other than Daisy khala</p>
+  </header>
 
-    <h1> I explored Tailwind </h1>
-    <p>Now i want to see my khala,none other then daisy khala</p>
-    
-    <button class="btn">Click me</button>    
-    <button class="btn btn-primary">Click me</button>    
-    <button>Click me</button> 
+  <!-- Buttons -->
+  <section class="flex flex-wrap justify-center gap-4">
+    <button class="btn">Click me</button>
+    <button class="btn btn-primary">Click me</button>
+    <button class="btn btn-outline">Click me</button>
+    <button class="btn loading">Loading</button>
+  </section>
 
-    <!--LOADING BUTTON-->
-    <Section>
-        <div>
-        
-        <button class="btn loading">loading</button>
+  <!-- Accordion Section -->
+  <section class="max-w-xl mx-auto space-y-4">
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="accordion" checked="checked" />
+      <div class="collapse-title text-xl font-medium">Do you like Tailwind?</div>
+      <div class="collapse-content">
+        <p>Yes, I do.</p>
+      </div>
     </div>
-    </Section>
-    
-    <section>
-        <!--accordian-->
-        <div class="collapse collapse-plus bg-base-200">
-  <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title text-xl font-medium">Do you like Taliwond</div>
-  <div class="collapse-content">
-    <p>yes i do</p>
-  </div>
-</div>
-<div class="collapse collapse-plus bg-base-200">
-  <input type="radio" name="my-accordion-3" />
-  <div class="collapse-title text-xl font-medium">Where are you live?</div>
-  <div class="collapse-content">
-    <p> Earth. It is one of the planet</p>
-  </div>
-</div>
-<div class="collapse collapse-plus bg-base-200">
-  <input type="radio" name="my-accordion-3" />
-  <div class="collapse-title text-xl font-medium"><H1>How old are you</H1></div>
-  <div class="collapse-content">
-    <p>I am 24</p>
-  </div>
-</div>
-    </section>
 
-    <!--Shoes card-->
-    <section>
-        <!---My shoes-->
-       
-<div class="card card-compact bg-base-100 w-96 shadow-xl">
-    
-  <figure>
-    <img src="images/jacket-1.png"  alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Shoes!</h2>
-    <p>This is best jacket in market</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary"> $234 Buy Now</button>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="accordion" />
+      <div class="collapse-title text-xl font-medium">Where do you live?</div>
+      <div class="collapse-content">
+        <p>Earth. It is one of the planets.</p>
+      </div>
     </div>
-  </div>
-</div>
-        
-    </section>
 
-    <!-- Slidebar or carousel -->
-<section class="my-8">
-  <div class="carousel w-full">
-    <!-- Jacket 1 -->
-    <div id="item1" class="carousel-item w-full">
-      <img src="images/jacket-1.png" class="w-full h-[400px] object-cover" />
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="accordion" />
+      <div class="collapse-title text-xl font-medium">How old are you?</div>
+      <div class="collapse-content">
+        <p>I am 24.</p>
+      </div>
     </div>
-    <!-- Jacket 2 -->
-    <div id="item2" class="carousel-item w-full">
-      <img src="images/jacket-2.png" class="w-full h-[400px] object-cover" />
-    </div>
-    <!-- Jacket 3 -->
-    <div id="item3" class="carousel-item w-full">
-      <img src="images/jacket-3.png" class="w-full h-[400px] object-cover" />
-    </div>
-    <!-- Jacket 4 -->
-    <div id="item4" class="carousel-item w-full">
-      <img src="images/jacket-4.png" class="w-full h-[400px] object-cover" />
-    </div>
-  </div>
+  </section>
 
-  <!-- Carousel Buttons -->
-  <div class="flex w-full justify-center gap-2 py-2">
-    <a href="#item1" class="btn btn-xs">1</a>
-    <a href="#item2" class="btn btn-xs">2</a>
-    <a href="#item3" class="btn btn-xs">3</a>
-    <a href="#item4" class="btn btn-xs">4</a>
-  </div>
-</section>
+  <!-- Product Card -->
+  <section class="flex justify-center">
+    <div class="card w-80 bg-base-100 shadow-xl">
+      <figure><img src="images/jacket-1.png" alt="Shoes" class="object-cover h-[300px] w-full" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>This is the best jacket in the market.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">$234 Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Carousel Section -->
+  <section class="w-full max-w-4xl mx-auto">
+    <div class="carousel w-full rounded-lg overflow-hidden">
+      <div id="item1" class="carousel-item w-full">
+        <img src="images/jacket-1.png" class="w-full h-[300px] md:h-[400px] object-cover" />
+      </div>
+      <div id="item2" class="carousel-item w-full">
+        <img src="images/jacket-2.png" class="w-full h-[300px] md:h-[400px] object-cover" />
+      </div>
+      <div id="item3" class="carousel-item w-full">
+        <img src="images/jacket-3.png" class="w-full h-[300px] md:h-[400px] object-cover" />
+      </div>
+      <div id="item4" class="carousel-item w-full">
+        <img src="images/jacket-4.png" class="w-full h-[300px] md:h-[400px] object-cover" />
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-2 py-4">
+      <a href="#item1" class="btn btn-sm">1</a>
+      <a href="#item2" class="btn btn-sm">2</a>
+      <a href="#item3" class="btn btn-sm">3</a>
+      <a href="#item4" class="btn btn-sm">4</a>
+    </div>
+  </section>
 
 </body>
 </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daisy Khala</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <header class="bg-gray-800 p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Daisy Khala</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="#collection" class="hover:text-yellow-400">Collection</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4 bg-gradient-to-r from-purple-500 to-pink-500">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Daisy Khala's Fashion World</h2>
+    <p class="text-lg">Where elegance meets simplicity</p>
+    <button class="mt-6 btn btn-accent">Explore Now</button>
+  </section>
+
+  <!-- Accordion Section -->
+  <section id="about" class="p-6 space-y-4 max-w-3xl mx-auto">
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="accordion" checked>
+      <div class="collapse-title text-xl font-medium">
+        Do you like Tailwind?
+      </div>
+      <div class="collapse-content">
+        <p>Yes, it's awesome!</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="accordion">
+      <div class="collapse-title text-xl font-medium">
+        Where do you live?
+      </div>
+      <div class="collapse-content">
+        <p>Earth, somewhere on the map!</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="accordion">
+      <div class="collapse-title text-xl font-medium">
+        How old are you?
+      </div>
+      <div class="collapse-content">
+        <p>Just timeless like fashion!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section id="collection" class="my-12 px-4 mx-auto max-w-6xl">
+    <h2 class="text-3xl font-bold text-center mb-8">Featured Jackets</h2>
+    <div class="carousel w-full max-w-4xl mx-auto">
+        
+      <div id="item1" class="carousel-item w-full">
+        <img src="images/jacket-1.png" class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" />
+      </div>
+      <div id="item2" class="carousel-item w-full">
+        <img src="images/jacket-2.png" class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" />
+      </div>
+      <div id="item3" class="carousel-item w-full">
+        <img src="images/jacket-3.png" class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" />
+      </div>
+      <div id="item3" class="carousel-item w-full">
+        <img src="images/jacket-4.png" class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" />
+      </div>
+      <div id="item3" class="carousel-item w-full">
+        <img src="images/jacket-5.png" class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" />
+      </div>
+      <div id="item3" class="carousel-item w-full">
+        <img src="images/jacket-6.png" class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" />
+      </div>
+    </div>
+    <div class="flex justify-center gap-2 py-4">
+      <a href="#item1" class="btn btn-xs">1</a>
+      <a href="#item2" class="btn btn-xs">2</a>
+      <a href="#item3" class="btn btn-xs">3</a>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="grid md:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
+    <div class="card bg-base-100 shadow-xl">
+      <figure><img src="images/jacket-1.png" alt="Jacket" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Winter Jacket</h2>
+        <p>Stay warm and stylish</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-xl">
+      <figure><img src="images/jacket-2.png" alt="Jacket" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Autumn Special</h2>
+        <p>Perfect for the season</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-xl">
+      <figure><img src="images/jacket-3.png" alt="Jacket" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Casual Comfort</h2>
+        <p>Lightweight and trendy</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-800 text-center p-6 mt-10">
+    <p>&copy; 2025 Daisy Khala Fashion. All rights reserved.</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:text-yellow-400">Facebook</a>
+      <a href="#" class="hover:text-yellow-400">Instagram</a>
+      <a href="#" class="hover:text-yellow-400">Twitter</a>
+    </div>
+  </footer>
+</body>
+
+</html>
